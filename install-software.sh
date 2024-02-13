@@ -22,7 +22,7 @@ sudo dnf install wget gpg
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 sudo dnf update
-sudo dnf install code
+sudo dnf install code -y
 # Install krita, gimp
 sudo dnf install krita gimp -y
 # Install gparted
@@ -30,7 +30,7 @@ sudo dnf install gparted -y
 # Install mate-calculator
 sudo dnf install mate-calc -y
 # Install spotify
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf install lpf-spotify-client -y
 sudo usermod -a -G pkg-build $USER
 # Install discord
@@ -46,8 +46,7 @@ sudo dnf install python3-pip -y
 # Install pip libraries - flask, pygame, jedi
 sudo dnf install python3-flask python3-pygame python3-jedi -y # Need to find rpm package for python3-pylint-common
 # Install SDL2 Libraries
-# sudo dnf install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev -y
-sudo dnf install SDL2-devel -y
+sudo dnf install SDL2-devel SDL2_image-devel SDL2_mixer-devel SDL2_ttf-devel -y
 # Install neofetch
 sudo dnf install neofetch -y
 # Install sqlitebrowser
@@ -79,7 +78,7 @@ curl -s "https://get.sdkman.io" | bash
 # yarn install
 # Delete all directories and files in Downloads folder
 cd ~/Downloads/
-rm *.deb
+rm *.rpm
 
 # Need to reboot then agree to Spotify agreement by entering command below in terminal
 # lpf approve spotify-client
