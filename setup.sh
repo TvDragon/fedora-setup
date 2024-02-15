@@ -5,7 +5,7 @@ sudo dnf update && sudo dnf upgrade -y
 # Essential installs
 sudo dnf install curl wget tar unzip -y
 sudo dnf install ./fedora-setup/rpm-packages/notify-osd-0.9.25-15.1.x86_64.rpm -y
-sudo dnf install bspwm polybar sxhkd libnotify dunst pavucontrol thunar rofi dmenu picom xfce4-terminal lxpolkit feh network-manager-applet -y
+sudo dnf install bspwm polybar sxhkd libnotify dunst pavucontrol thunar thunar-archive-plugin rofi dmenu picom xfce4-terminal lxpolkit feh network-manager-applet -y
 # Less important installs
 sudo dnf install lxappearance -y
 
