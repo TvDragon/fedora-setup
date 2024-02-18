@@ -58,6 +58,6 @@ chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/polybar/launch.sh
 
 # Install display manager
-sudo nala install sddm -y
+sudo dnf install sddm -y
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
