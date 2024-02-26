@@ -1,7 +1,8 @@
 #! /bin/sh
 
 # Workspace monitors
-bspc monitor -d I II III IV V
+bspc monitor HDMI-1 -d I II III IV V
+bspc monitor HDMI-2 -d VI VII VIII IX X
 
 # Other Stuff
 bspc config border_width         2
