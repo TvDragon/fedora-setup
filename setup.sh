@@ -60,5 +60,5 @@ chmod +x ~/.config/polybar/launch.sh
 # Install display manager
 sudo dnf install lightdm-gtk -y
 sudo systemctl enable lightdm
-sudo dnf install lightdm-gtk-greeter-settings
+sudo dnf install lightdm-gtk-greeter-settings -y
 sudo systemctl set-default graphical.target
