@@ -58,6 +58,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/polybar/launch.sh
 
 # Install display manager
-sudo dnf install sddm -y
-sudo systemctl enable sddm
+sudo dnf install lightdm-gtk -y
+sudo systemctl enable lightdm
+sudo dnf install lightdm-gtk-greeter-settings
 sudo systemctl set-default graphical.target
