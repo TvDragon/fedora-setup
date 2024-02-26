@@ -17,13 +17,6 @@ Polar Space is a minimialistic Linux setup for Fedora using the Gruvbox Dark B T
 - rofi
 - xfce4-terminal
 
-## Dependencies for XFWM4
-- xfwm4
-- xfce4-settings
-- xfce4-panel
-- xfce4-whiskermenu
-- xfce4-terminal
-
 ## Installation Steps (Fedora Server netinst.iso)
 **NOTE:** This guide uses ``~/`` as the default path for cloning repos
 
