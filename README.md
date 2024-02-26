@@ -50,4 +50,4 @@ Polar Space is a minimialistic Linux setup for Fedora using the Gruvbox Dark B T
 		sh setup.sh
 
 [fedora]: https://img.shields.io/badge/Fedora-FFFFFF?style=for-the-badge&logo=fedora&logoColor=#51A2DA
-[Fedora-url]: [https://www.debian.org/](https://fedoraproject.org/server/download)https://fedoraproject.org/server/download
+[Fedora-url]: https://fedoraproject.org/server/download
